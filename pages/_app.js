@@ -3,9 +3,10 @@ import { IntlProvider } from "react-intl";
 import "../styles/globals.css";
 
 const messages = {
-  en: { name: "Name" },
-  fr: { name: "Nom" },
-  es: { name: "Nombre" },
+  en: { title: "Hello welcome to my website" },
+  fr: { title: "Bonjour bienvenue sur mon site" },
+  es: { title: "Hola bienvenidos a mi sitio web" },
+  pt: { title: "Olá seja bem vindo ao meu site" },
 };
 
 function MyApp({ Component, pageProps }) {
