@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useIntl } from "react-intl";
-
-
+import Image from 'next/image'
 
 export default function About() {
   const { locale, locales } = useRouter();
@@ -25,6 +24,12 @@ export default function About() {
     </nav>
    
       <h1>{f({ id: "title" })}</h1>
+      <Image
+        src={f({ id: 'imgUrl'})}
+        alt="USA Flag"
+        width={500}
+        height={400}
+      ></Image>
       
     </div>
   );
